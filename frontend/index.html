@@ -75,8 +75,12 @@
                             <span class="swirl-left"></span>
                             <span class="statement-text">are getting married</span>
                             <span class="swirl-right"></span>
-                            <div class="hide">
-                              <audio src="/assets/mp3/itmightbeyou.mp3" preload="auto" loop="loop" autoplay="autoplay"/>
+                            <div id="audioplayer" class="hide">
+                              <script>
+                                setTimeout(function() {
+                                  document.getElementById("audioplayer").innerHTML = '<audio src="/assets/mp3/itmightbeyou.mp3" preload="auto" loop="loop" autoplay="autoplay"/>';
+                                }, 2000);
+                              </script>
                             </div>
                         </span><!--//statement-->
                     </h1><!--/headline-->
