@@ -124,48 +124,7 @@ $(document).ready(function() {
         });
     });
 
-
-    /* ======= RSVP Form (Dependent form field) ============ */
-    $('#cguests').on("change", function(){
-
-        if ($(this).val() == "") {
-            $('.guestinfo-group').slideUp(); //hide
-            console.log('not selected');
-        } else if ($(this).val() == 'No Guests' ) {
-            $('.guestinfo-group').slideUp(); //hide
-            console.log('No guests');
-            $('#cguestinfo').val('No Guests'); //Pass data to the field so mailer.php can send the form.
-
-        } else {
-            $('.guestinfo-group').slideDown(); //show
-            $('#cguestinfo').val(''); //Clear data
-            console.log('Has guests');
-        }
-
-
+    audiojs.events.ready(function() {
+      var as = audiojs.createAll();
     });
-
-    /* ======= jQuery form validator ======= */
-    /* Ref: http://jqueryvalidation.org/documentation/ */
-    $(".rsvp-form").validate({
-		messages: {
-		    name: {
-    			required: 'Please enter your full name' //You can customise this message
-			},
-			email: {
-				required: 'Please enter your email' //You can customise this message
-			},
-			events: {
-				required: 'Are you attending?' //You can customise this message
-			},
-			guests: {
-				required: 'How many guests?' //You can customise this message
-			},
-			guestinfo: {
-				required: 'Please provide name(s)' //You can customise this message
-			},
-		}
-	});
-
-
 });
