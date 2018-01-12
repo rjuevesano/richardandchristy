@@ -1019,6 +1019,9 @@ label {
   .headline .statement-text {
     font-size: 32px;
   }
+  .parents {
+    margin-bottom: 30px;
+  }
   .headline .swirl-left,
   .headline .swirl-right {
     width: 25px;
