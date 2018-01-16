@@ -1022,6 +1022,9 @@ label {
   .parents {
     margin-bottom: 30px;
   }
+  .couple-profile {
+    bottom: auto;
+  }
   .headline .swirl-left,
   .headline .swirl-right {
     width: 25px;
