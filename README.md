@@ -1,3 +1,1 @@
 # richardandchristy
-
-Wedding website...
