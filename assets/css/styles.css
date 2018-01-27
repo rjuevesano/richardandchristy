@@ -296,6 +296,9 @@ label {
   background: #413a38;
   color: #fff;
 }
+.wedding-entourage {
+  padding-top: 60px;
+}
 /* ====== Nav ======= */
 .navbar-toggle {
   margin-right: 0;
@@ -1045,6 +1048,12 @@ label {
   }
   .parents {
     margin-bottom: 50px;
+  }
+  .section-parents {
+    padding-top: 0px;
+  }
+  .wedding-entourage {
+    padding-top: 30px;
   }
   .couple-profile {
     bottom: auto;

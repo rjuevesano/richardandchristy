@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="assets/plugins/Bootstrap-Image-Gallery/css/bootstrap-image-gallery.min.css">
 
     <!-- Theme CSS -->
-    <link id="theme-style" rel="stylesheet" href="assets/css/styles.min.css">
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="//oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -97,32 +97,37 @@
         <div class="curve-holder"></div>
     </div><!--//hero-section-->
 
-    <div class="section-parents" style="padding-top: 60px;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-6">
-            <div class="parents text-center wow fadeIn" style="font-weight: 600; visibility: visible; animation-name: fadeIn;">
-              <div style="text-transform: uppercase; font-size: 15px;">Parents of the Groom</div>
-              <h3 style="border-top: 1px solid #8a1f53; border-bottom: 1px solid #8a1f53; padding-top: 15px; padding-bottom: 10px; margin-top: 5px; font-family: 'Great Vibes', cursive; color: #8a1f53; font-size: 36px;">Mr. and Mrs. Renato Juevesano</h3>
-            </div><!-- parents -->
-          </div><!-- col 4 -->
-          <div class="col-md-6 col-sm-6">
-            <div class="parents text-center wow fadeIn" style="font-weight: 600; visibility: visible; animation-name: fadeIn;">
-              <div style="text-transform: uppercase; font-size: 15px;">Parents of the Groom</div>
-              <h3 style="border-top: 1px solid #8a1f53; border-bottom: 1px solid #8a1f53; padding-top: 15px; padding-bottom: 10px; margin-top: 5px; font-family: 'Great Vibes', cursive; color: #8a1f53; font-size: 36px;">Mrs. Nenita Ocariza</h3>
-            </div><!-- parents -->
-          </div><!-- col 4 -->
-        </div><!-- row -->
-      </div><!-- container -->
-    </div>
-
     <!-- ******Wedding Section****** -->
     <section id="wedding" class="wedding-section section">
         <div class="container text-center">
             <h3 class="title script"><span class="title-deco-left"></span><span class="title-text">The Wedding</span><span class="title-deco-right"></span></h3>
             <div id="countdown-box" class="countdown-box">
-
             </div><!--//countdown-box-->
+
+            <div class="section-parents">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-6 col-sm-6">
+                      <div class="parents text-center wow fadeIn" style="font-weight: 600; visibility: visible; animation-name: fadeIn;">
+                        <div style="text-transform: uppercase; font-size: 15px;">Parents of the Groom</div>
+                        <h3 style="border-top: 1px solid #8a1f53; border-bottom: 1px solid #8a1f53; padding-top: 15px; padding-bottom: 10px; margin-top: 5px; font-family: 'Great Vibes', cursive; color: #8a1f53; font-size: 36px;">Mr. and Mrs. Renato Juevesano</h3>
+                      </div><!-- parents -->
+                    </div><!-- col 4 -->
+                    <div class="col-md-6 col-sm-6">
+                      <div class="parents text-center wow fadeIn" style="font-weight: 600; visibility: visible; animation-name: fadeIn;">
+                        <div style="text-transform: uppercase; font-size: 15px;">Parents of the Bride</div>
+                        <h3 style="border-top: 1px solid #8a1f53; border-bottom: 1px solid #8a1f53; padding-top: 15px; padding-bottom: 10px; margin-top: 5px; font-family: 'Great Vibes', cursive; color: #8a1f53; font-size: 36px;">Mrs. Nenita Ocariza</h3>
+                      </div><!-- parents -->
+                    </div><!-- col 4 -->
+                  </div><!-- row -->
+                  <div class="row wedding-entourage">
+                    <div class="action-wrapper">
+                        <a class="btn btn-primary" href="#" data-toggle="modal" data-target="#entourage-modal">Wedding Entourage</a>
+                    </div><!--//action-wrapper-->
+                   </div>
+                </div><!-- container -->
+            </div>
+
             <div class="row cols-wrapper">
                 <div class="ceremony-col col-xs-12 col-sm-6">
                     <div class="col-inner">
@@ -372,6 +377,30 @@
             </div><!--//modal-content-->
         </div><!--//modal-dialog-->
     </div><!--//modal-->
+
+    <!-- Entourage Modal -->
+    <div id="entourage-modal" class="modal modal-rsvp"  tabindex="-1" role="dialog" aria-labelledby="rsvpModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                        <h2 id="rsvpModalLabel" class="modal-title text-center">
+                            <span class="title script display-block">
+                                <span class="title-deco-left"></span>
+                                <span class="title-text">Wedding Entourage</span>
+                                <span class="title-deco-right"></span>
+                            </span>
+                        </h2>
+    
+                    </div><!--//modal-header-->
+                    <div class="modal-body text-center">
+                        <p>
+                            <img src="assets/images/entourage.png" style="width: 100%; height: 100%;"/>
+                        </p>
+                    </div><!--//modal-body-->
+                </div><!--//modal-content-->
+            </div><!--//modal-dialog-->
+        </div><!--//modal-->
 
     <!-- Direction Modal-->
     <div id="direction-modal" class="direction-modal modal" tabindex="-1" role="dialog" aria-labelledby="directionModalLabel">
